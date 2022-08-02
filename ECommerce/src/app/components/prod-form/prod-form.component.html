@@ -1,0 +1,133 @@
+
+<body style="margin-top : 4%">
+
+<div class="container" routerLink="/addprod">
+ <table>
+
+<div class="row">
+  <div class="col-sm-3">
+    <label class="col-form-label">Product Id</label>
+  </div>
+  <div class="col-sm-6">
+  <input type="text" name="id" th:field ="*{id}" />
+  </div>
+</div>
+
+&nbsp;
+
+
+<div class="row">
+  <div class="col-sm-3">
+    <label class="col-form-label">SKU</label>
+  </div>
+  <div class="col-sm-6">
+  <input type="text" name="sku" th:field ="*{sku}" />
+  </div>
+</div>
+&nbsp;
+<div class="row">
+  <div class="col-sm-3">
+    <label class="col-form-label">NAME</label>
+  </div>
+  <div class="col-sm-6">
+  <input type="text" name="name" th:field ="*{name}" />
+  </div>
+</div>
+&nbsp;
+<div class="row">
+  <div class="col-sm-3">
+    <label class="col-form-label">Description</label>
+  </div>
+  <div class="col-sm-6">
+  <input type="text" name="description" th:field ="*{description}" />
+  </div>
+</div>
+
+&nbsp;
+<div class="row">
+  <div class="col-sm-3">
+    <label class="col-form-label">Unit Price</label>
+  </div>
+  <div class="col-sm-6">
+  <input type="text" name="unitprice" th:field ="*{unitprice}" />
+  </div>
+</div>
+&nbsp;
+<div class="row">
+  <div class="col-sm-3">
+    <label class="col-form-label">Url</label>
+  </div>
+  <div class="col-sm-6">
+  <input type="text" name="url" th:field ="*{url}"/>
+  </div>
+</div>
+
+&nbsp;
+<div class="row">
+  <div class="col-sm-3">
+    <label class="col-form-label">Active</label>
+  </div>
+  <div class="col-sm-6">
+  <input type="text" name="active"  th:field ="*{active}"/>
+  </div>
+</div>
+&nbsp;
+
+<div class="row">
+  <div class="col-sm-3">
+    <label class="col-form-label">Units in stock</label>
+  </div>
+  <div class="col-sm-6">
+  <input type="text" name="unitsinstock"  th:field ="*{unitsinstock}"/>
+  </div>
+</div>
+
+&nbsp;
+<div class="row">
+  <div class="col-sm-3">
+    <label class="col-form-label">Date Created</label>
+  </div>
+  <div class="col-sm-6">
+  <input type="date" name="datecreated" th:field ="*{datecreated}"/>
+  </div>
+</div>
+
+&nbsp;
+<div class="row">
+  <div class="col-sm-3">
+    <label class="col-form-label">LastUpdated</label>
+  </div>
+  <div class="col-sm-6">
+  <input type="date" name="lastupdated"  th:field ="*{lastupdated}"/>
+  </div>
+</div>
+&nbsp;
+
+<div class="row">
+  <div class="col-sm-3">
+    <label class="col-form-label">Category Id</label>
+  </div>
+  <div class="col-sm-6">
+  <input type="text" name="categoryid"  th:field ="*{categoryid}"/>
+  </div>
+</div>
+
+&nbsp;
+
+<div class="row">
+  <div class="col-sm-2">
+  <input type ="submit" value ="Submit" name="submit" class="btn btn-lg btn-dark"  />
+  </div>
+  
+  <div class="col-sm-4">
+  <input type ="reset" value ="Reset" name="reset" class="btn btn-lg btn-dark" />
+  </div>
+  </div>
+</table>
+
+
+&nbsp;
+<div>
+    <input type="submit" value="Back to product list" class="btn btn-primary btn-lg" (click)="showProduct()" />
+</div>
+</div>
